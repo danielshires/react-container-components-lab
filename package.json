@@ -24,8 +24,8 @@
     "babel-preset-stage-0": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
     "chai": "^4.1.2",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.0.1",
+    "enzyme": "3.3.0",
+    "enzyme-adapter-react-16": "1.0.1",
     "fetch-mock": "^6.5.2",
     "isomorphic-fetch": "^2.2.1",
     "mocha-multi": "^1.0.1",
@@ -35,7 +35,7 @@
     "sinon": "^6.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "test": "mocha --timeout 5000 -w test/helpers.js test/*.js",
     "dev:hot": "webpack-dev-server --hot --inline --progress --colors --watch --display-error-details --display-cached --content-base ./",

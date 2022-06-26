@@ -47,6 +47,7 @@ describe('<LatestMovieReviewsContainer />', () => {
   it('should render reviews after reviews state updated', () => {
     wrapper = !LatestMovieReviewsContainer.prototype ?
       mount(<Noop />) : mount(<LatestMovieReviewsContainer />);
+      console.log(wrapper)
     wrapper.setState({ reviews: testReviews });
     wrapper.update();
     expect(wrapper.find('.review').length).to.equal(testReviews.length);
